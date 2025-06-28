@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/** RESET **/
+
+body {
+    color: #382715;
+}
+
+header.cabecalho, ul.flex {
+    display: flex;
+}
+
+header.cabecalho {
+    justify-content: space-between;
+    background-color: #e9ceb3;
+}
+
+ul {
+    margin: 25px 20px;
+}
+
+li {
+    padding: 15px;
+    margin: 25px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+li:hover {
+    background-color: #382715bb ;
+    color: #E5E3D7;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+}
+
+a, li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #382715;
+}
+
+#logo {
+    height: 170px;
+}
+
+#title-color {
+    color: #d9ab76;
+}
+
+main.container {
+    height: 550px;
+    background: linear-gradient(15deg,rgba(141, 66, 39, 1) 25%, rgba(214, 153, 54, 1) 50%, rgba(141, 66, 39, 1) 76%);
+    display: flex;
+}
+
+main.container>img {
+    width: 700px;
+    backdrop-filter: blur(100);
+    
+}
+
+h1, h3 {
+    text-align: center;
+    margin: 30px 10px;
+    color: #eae2c8;
+    transform: translate(-50%);
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+}
