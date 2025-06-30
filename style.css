@@ -1,3 +1,4 @@
+/* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,13 +19,13 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
     line-height: 1;
+    background-color: #d9ab76;
 }
 ol, ul {
     list-style: none;
@@ -41,74 +42,155 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/** RESET **/
+
+/* ESTILO PERSONALIZADO */
 
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ef;
     color: #382715;
 }
 
-header.cabecalho, ul.flex {
-    display: flex;
-}
-
+/* Cabeçalho */
 header.cabecalho {
-    justify-content: space-between;
     background-color: #e9ceb3;
-}
-
-ul {
-    margin: 25px 20px;
-}
-
-li {
     padding: 15px;
-    margin: 25px 10px;
-    font-weight: 700;
-    font-size: 20px;
-    border-radius: 15px;
-}
-
-li:hover {
-    background-color: #382715bb ;
-    color: #E5E3D7;
-    transform: scale(1.1);
-    transition: ease-in-out 0.2s;
-}
-
-a, li {
-    text-decoration: none;
-    list-style-type: none;
-    color: #382715;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #logo {
-    height: 170px;
+    height: 100px;
 }
 
-#title-color {
-    color: #d9ab76;
-}
-
-main.container {
-    height: 550px;
-    background: linear-gradient(15deg,rgba(141, 66, 39, 1) 25%, rgba(214, 153, 54, 1) 50%, rgba(141, 66, 39, 1) 76%);
+.menu {
     display: flex;
+    gap: 20px;
 }
 
-main.container>img {
-    width: 700px;
-    backdrop-filter: blur(100);
-    
+.menu a {
+    text-decoration: none;
+    color: #5e4606;
+    font-weight: bold;
 }
 
-h1, h3 {
-    text-align: center;
-    margin: 30px 10px;
-    color: #eae2c8;
-    transform: translate(-50%);
+.menu a:hover {
+    color: #a0743d;
 }
 
-h1 {
+/* Barra de pesquisa */
+.barra-de-pesquisa {
+    margin-top: 10px;
+}
+
+.barra-de-pesquisa input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.barra-de-pesquisa button {
+    padding: 5px 10px;
+    background-color: #5e4606;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.barra-de-pesquisa button:hover {
+    background-color: #a0743d;
+}
+
+/* Main */
+main.container {
+    display: flex;
+    flex-direction: row; /* imagem e título lado a lado */
+    align-items: center; /* alinhamento vertical */
+    justify-content: center; /* centraliza horizontalmente */
+    padding: 30px;
+    background: linear-gradient(15deg, #8d4227 25%, #d69936 50%, #8d4227 76%);
+    gap: 40px; /* espaço entre imagem e título */
+}
+
+main.container img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.title h1 {
     font-size: 70px;
-    font-weight: 900;
+    color: #eae2c8;
+    text-align: center;
+    margin: 0;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #d8bfa6;
+    color: #5e4606;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+main.sobre-nos {
+    background: linear-gradient(15deg, #8d4227 25%, #d69936 50%, #8d4227 76%);
+    padding: 50px 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    color: #f0e8d7;
+    display: block;
+}
+
+main.sobre-nos h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #eae2c8;
+}
+
+main.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+main.sobre-nos section.contato {
+    margin-top: 40px;
+}
+
+main.sobre-nos section.contato h2 {
+    font-size: 36px;
+    color: #eae2c8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main.sobre-nos section.contato ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+main.sobre-nos section.contato ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f0e8d7;
+}
+
+main.sobre-nos section.contato ul li a {
+    color: #d9ab76;
+    text-decoration: none;
+}
+
+main.sobre-nos section.contato ul li a:hover {
+    text-decoration: underline;
 }
