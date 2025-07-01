@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background-color: #d9ab76;
+    
 }
 ol, ul {
     list-style: none;
@@ -47,7 +47,7 @@ table {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f3ef;
+    background-color: #d9ab76;
     color: #382715;
 }
 
@@ -193,4 +193,47 @@ main.sobre-nos section.contato ul li a {
 
 main.sobre-nos section.contato ul li a:hover {
     text-decoration: underline;
+}
+/**-------------- PRODUTOS --------------**/
+
+section.discos>a>nav.item>img{
+    height: 200px;
+}
+
+section.discos>a>nav {
+    height: 300px;
+}
+
+section.discos {
+    padding: 25px 15px;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+}
+
+section.discos>a>nav.item{
+    background-color: #ffffff45;
+    padding: 10px;
+}
+
+section.discos>a>nav.item:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    background-color: #ffffff92;
+}
+
+nav.item>p {
+    max-width: 200px;
+}
+
+nav.item>p.nome-item {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #382715;
 }
